@@ -20,7 +20,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10px;
 }
 
 nav a {
@@ -28,6 +27,7 @@ nav a {
     color: white;
     font-size: 36px;
     transition: color 0.1s linear, font-size 0.1s linear;
+    margin: 10px 10px;
 }
 
 nav a:hover {
@@ -40,7 +40,7 @@ nav a:hover {
     width: 1000px;
     border-radius: 10px;
     background-color: white;
-    margin: 50px 50px;
+    margin: 70px 50px;
     display: flex;
     flex-direction: row;
     transition: background-color 0.1s linear, transform 0.1s linear;
@@ -74,9 +74,57 @@ nav a:hover {
 
 .flavour {
     margin: 10px 20px;
-     transition: color 0.1s linear, transform 0.1s linear;
 }
 
 .flavour h2 {
+    font-size: 28px;
+    margin: 10px 0 20px 0;
+}
+
+.card2 {
+    height: 380px;
+    width: 1000px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 140px 50px 70px 50px;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.1s linear, transform 0.1s linear;
+}
+
+.card2:hover{
+    background-color: #141414;
+    transform: scale(1.05);
+}
+
+.card2 .flavour1 {
+    transition: transform 0.1s ease, color 0.1s linear;
+    color: #9900ff;
+}
+
+.card2:hover .flavour1 {
+    transform: scale(1.05);
+    color: #39ff14;
+}
+
+.flavour1 h2, p {
+    font-family: "Verdana", Geneva, sans-serif;
+}
+
+.card2 img {
+    width: 637px;
+    height: 358px;
+    margin: 10px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.flavour1 {
+    margin: 10px 20px;
+}
+
+
+.flavour1 h2 {
+    font-size: 28px;
     margin: 10px 0 20px 0;
 }
