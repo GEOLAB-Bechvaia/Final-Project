@@ -173,4 +173,51 @@ nav a:hover {
 .flavour1 h2 {
   font-size: 28px;
   margin: 10px 0 20px 0;
+}
+
+.card3 {
+  height: 380px;
+  width: 1000px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 140px 50px 70px 50px;
+  display: flex;
+  flex-direction: row;
+  transition: background-color 0.1s linear, transform 0.1s linear;
+}
+
+.card3:hover {
+  background-color: #141414;
+  transform: scale(1.05);
+}
+
+.card3 .flavour2 {
+  transition: transform 0.1s ease, color 0.1s linear;
+  color: #9900ff;
+}
+
+.card3:hover .flavour2 {
+  transform: scale(1.05);
+  color: #39ff14;
+}
+
+.flavour2 h2, p {
+  font-family: "Verdana", Geneva, sans-serif;
+}
+
+.card3 img {
+  width: 637px;
+  height: 358px;
+  margin: 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.flavour2 {
+  margin: 10px 20px;
+}
+
+.flavour2 h2 {
+  font-size: 28px;
+  margin: 10px 0 20px 0;
 }/*# sourceMappingURL=styles.css.map */
