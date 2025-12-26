@@ -1,0 +1,82 @@
+@import "reset.scss";
+
+body {
+    background-color: #2d2d2d;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.menu {
+    height: 100px;
+    width: 100%;
+    background-color: #141414;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    transition: color 0.1s linear, font-size 0.1s linear;
+}
+
+nav a:hover {
+    color: #39ff14;
+    font-size: 60px;
+}
+
+.card1 {
+    height: 380px;
+    width: 1000px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.1s linear, transform 0.1s linear;
+}
+
+.card1:hover{
+    background-color: #141414;
+    transform: scale(1.05);
+}
+
+.card1 .flavour {
+    transition: transform 0.1s ease, color 0.1s linear;
+    color: #9900ff;
+}
+
+.card1:hover .flavour {
+    transform: scale(1.05);
+    color: #39ff14;
+}
+
+.flavour h2, p {
+    font-family: "Verdana", Geneva, sans-serif;
+}
+
+.card1 img {
+    width: 637px;
+    height: 358px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.flavour {
+    margin: 10px 20px;
+     transition: color 0.1s linear, transform 0.1s linear;
+}
+
+.flavour h2 {
+    margin: 10px 0 20px 0;
+}

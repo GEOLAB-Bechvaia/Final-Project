@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #2d2d2d;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu {
+  height: 100px;
+  width: 100%;
+  background-color: #141414;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+  transition: color 0.1s linear, font-size 0.1s linear;
+}
+
+nav a:hover {
+  color: #39ff14;
+  font-size: 60px;
+}
+
+.card1 {
+  height: 380px;
+  width: 1000px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: row;
+  transition: background-color 0.1s linear, transform 0.1s linear;
+}
+
+.card1:hover {
+  background-color: #141414;
+  transform: scale(1.05);
+}
+
+.card1 .flavour {
+  transition: transform 0.1s ease, color 0.1s linear;
+  color: #9900ff;
+}
+
+.card1:hover .flavour {
+  transform: scale(1.05);
+  color: #39ff14;
+}
+
+.flavour h2, p {
+  font-family: "Verdana", Geneva, sans-serif;
+}
+
+.card1 img {
+  width: 637px;
+  height: 358px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.flavour {
+  margin: 10px 20px;
+  transition: color 0.1s linear, transform 0.1s linear;
+}
+
+.flavour h2 {
+  margin: 10px 0 20px 0;
+}/*# sourceMappingURL=styles.css.map */
