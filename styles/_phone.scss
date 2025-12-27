@@ -1,3 +1,7 @@
-p {
-    font-size: 100px;
+.card1 img, .card2 img, .card3 img {
+    width: 93% !important;
+}
+
+.card1, .card2, .card3 {
+    height: 570px !important;
 }
