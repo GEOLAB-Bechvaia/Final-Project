@@ -57,6 +57,7 @@ h1 {
   font-family: "Times New Roman", Times, serif;
 }
 
+/* General */
 .menu {
   height: 100px;
   width: 100%;
@@ -82,6 +83,8 @@ nav a:hover {
   font-size: 60px;
 }
 
+/* General */
+/* Home */
 .card1 {
   height: 380px;
   width: 1000px;
@@ -222,6 +225,8 @@ nav a:hover {
   margin: 10px 0 20px 0;
 }
 
+/* Home */
+/* General */
 .rezani {
   height: 200px;
   width: 100%;
@@ -243,6 +248,7 @@ nav a:hover {
   margin: 20px 0;
 }
 
+/* General */
 @media (max-width: 480px) {
   .card1 img, .card2 img, .card3 img {
     width: 93% !important;
@@ -291,6 +297,7 @@ nav a:hover {
     height: auto;
   }
 }
+/* General */
 .menuph {
   display: none;
   color: white;
@@ -332,6 +339,8 @@ nav a:hover {
   background-color: #141414;
 }
 
+/* General */
+/* Services */
 .servo {
   display: flex;
   flex-wrap: wrap;
@@ -463,6 +472,8 @@ nav a:hover {
   text-align: center;
 }
 
+/* Services */
+/* EUIV */
 #euivbg {
   width: 100%;
   height: auto;
@@ -501,4 +512,40 @@ nav a:hover {
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   margin: 20px 150px;
+}
+
+/* EUIV */
+/* EUV */
+.background-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }/*# sourceMappingURL=styles.css.map */
