@@ -622,6 +622,7 @@ nav a:hover {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 10px 10px;
     transition: background-color 200ms, border-color 200ms, color 200ms;
 }
 
@@ -726,4 +727,111 @@ nav a:hover {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     line-height: 1.5em;
+}
+
+/* CK3 */
+/* Form */
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+    padding: 20px;
+    flex-direction: column;
+}
+
+.register-form {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.register-form h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.subtitle {
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.input-group input {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 12px 14px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 200ms, background-color 200ms;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.input-group input:focus {
+    border-color: #ffd267;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.login-link a {
+    color: #ffd267;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+#registerBtn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid #ffd267;
+    background-color: #ffd267;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+}
+
+#registerBtn:hover {
+    background-color: transparent;
+    color: #ffd267;
 }
