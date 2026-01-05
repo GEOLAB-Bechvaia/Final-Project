@@ -1,112 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <!DOCTYPE html>
-<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../../css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
   </head>
   <body>
-    <div class="menu">
-      <nav>
-        <a href="./../../index.html">Home</a>
-        <a href="./../../about-us/index.html">About Us</a>
-        <a href="./../../news/index.html">News</a>
-        <a href="./../../contact/index.html">Contact</a>
-      </nav>
-    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./../../css/styles.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+      </head>
+      <body>
+        <div class="menu">
+          <nav>
+            <a href="./../../index.html">Home</a>
+            <a href="./../../about-us/index.html">About Us</a>
+            <a href="./../../news/index.html">News</a>
+            <a href="./../../contact/index.html">Contact</a>
+          </nav>
+        </div>
 
-    <nav class="menuph">
-      <ul>
-        <li class="dropdown">
-          <i class="fa-solid fa-bars"></i>
-          <ul class="dropdown-content">
-            <li><a href="./../../index.html">Home</a></li>
-            <li><a href="./../../about-us/index.html">About Us</a></li>
-            <li><a href="./../../news/index.html">News</a></li>
-            <li><a href="./../../contact/index.html">Contact</a></li>
+        <nav class="menuph">
+          <ul>
+            <li class="dropdown">
+              <i class="fa-solid fa-bars"></i>
+              <ul class="dropdown-content">
+                <li><a href="./../../index.html">Home</a></li>
+                <li><a href="./../../about-us/index.html">About Us</a></li>
+                <li><a href="./../../news/index.html">News</a></li>
+                <li><a href="./../../contact/index.html">Contact</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </nav>
+        </nav>
 
+        <div class="register-container">
+          <form class="register-form">
+            <h1>Create Account</h1>
+            <p class="subtitle">Join us and get started</p>
 
-<div class="register-container">
-  <form class="register-form">
-    <h1>Create Account</h1>
-    <p class="subtitle">Join us and get started</p>
+            <div class="input-group">
+              <label for="username">Name</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Your name"
+                required
+              />
+            </div>
 
-    <div class="input-group">
-      <label for="username">Name</label>
-      <input type="text" id="username" placeholder="Your name" required />
-    </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
 
-    <div class="input-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="you@example.com" required />
-    </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
 
-    <div class="input-group">
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="••••••••" required />
-    </div>
+            <div class="input-group">
+              <label for="confirm">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm"
+                placeholder="••••••••"
+                required
+              />
+            </div>
 
-    <div class="input-group">
-      <label for="confirm">Confirm Password</label>
-      <input type="password" id="confirm" placeholder="••••••••" required />
-    </div>
+            <button id="registerBtn" type="submit">Register</button>
 
-    <button id="registerBtn" type="submit">Register</button>
+            <p class="login-link">
+              Already have an account? <a href="#">Sign in</a>
+            </p>
+          </form>
+          <div class="bbutton">
+            <a href="./../index.html"><button>Back to Services</button></a>
+          </div>
+        </div>
 
-    <p class="login-link">
-      Already have an account? <a href="#">Sign in</a>
-    </p>
-  </form>
-  <div class="bbutton">
-      <a href="./../index.html"><button>Back to Services</button></a>
-    </div>
-</div>
-
-
-
-
-
-    <div class="rezani">
-      <div class="menusec">
-        <p>Our Mission</p>
-        <p>Our Story</p>
-        <p>Careers</p>
-        <p>Blog</p>
-    </div>
-    <div class="menusec">
-        <p>Gift Cards</p>
-        <p>Pricing</p>
-        <p>Support</p>
-        <p>FAQ</p>
-    </div>
-    <div class="menusec">
-        <p>Donations</p>
-        <p>Privacy</p>
-        <p>Terms</p>
-        <p>Subscribe</p>
-    </div>
-    <div class="menusec">
-      <a href="https://www.tbceducation.ge/">
-        <img src="/images/tbc-logo.png">
-      </a>
-    </div>
-    </div>
-    
-</body>
+        <div class="rezani">
+          <div class="menusec">
+            <p>Our Mission</p>
+            <p>Our Story</p>
+            <p>Careers</p>
+            <p>Blog</p>
+          </div>
+          <div class="menusec">
+            <p>Gift Cards</p>
+            <p>Pricing</p>
+            <p>Support</p>
+            <p>FAQ</p>
+          </div>
+          <div class="menusec">
+            <p>Donations</p>
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>Subscribe</p>
+          </div>
+          <div class="menusec">
+            <a href="https://www.tbceducation.ge/">
+              <img src="/images/tbc-logo.png" />
+            </a>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
 </html>

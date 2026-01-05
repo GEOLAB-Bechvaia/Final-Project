@@ -1,3 +1,5 @@
+/* Home */
+
 .card1 img, .card2 img, .card3 img {
     width: 93% !important;
 }
@@ -16,4 +18,60 @@
 
 .menu {
     display: none !important;
+}
+
+/* Home */
+/* EUIV */
+
+#euivtxt {
+    width: 50% !important;
+    top: 90px !important;
+    left: 130px !important;
+}
+
+/* EUIV */
+/* HOIIV */
+
+#hoitxt {
+    width: 50% !important;
+    height: auto !important;
+    top: 50px !important;
+    left: 120px !important;
+}
+
+#hoiserv h2 {
+    font-size: 2rem !important;
+}
+
+#hoiserv p {
+    width: 400px !important;
+}
+
+/* HOIIV */
+/* CK3 */
+
+#ck3serv h2 {
+    font-size: 2rem !important;
+}
+
+#ck3serv p {
+    width: 400px !important;
+}
+
+/* CK3 */
+/* EUV */
+
+#euvtxt {
+    width: 50% !important;
+    height: auto !important;
+    top: 90px !important;
+    left: 235px !important;
+}
+
+#euvserv h1 {
+    font-size: 3rem !important;
+}
+
+#euvserv p {
+    width: 400px !important;
 }

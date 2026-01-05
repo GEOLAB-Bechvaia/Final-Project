@@ -213,6 +213,7 @@ nav a:hover {
 }
 
 /* General */
+/* Responsive */
 
 @media (max-width: 480px) {
     @import "phone.scss";
@@ -255,14 +256,15 @@ nav a:hover {
     }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    @import "tablet.scss";
+}
+
 /* General */
 
 .menuph {
     display: none;
     color: white;
-}
-
-.menuph {
     width: 100%;
     height: 100px;
     background-color: #141414;
@@ -280,6 +282,7 @@ nav a:hover {
     list-style: none;
     padding: 10px 0;
     min-width: 150px;
+    z-index: 100;
 }
 
 .dropdown-content a {
@@ -301,6 +304,13 @@ nav a:hover {
 /* General */
 /* Services */
 
+#rts {
+    font-family: "Universalis", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
 .servo {
     display: flex;
     flex-wrap: wrap;
@@ -320,7 +330,7 @@ nav a:hover {
     height: 380px;
     width: 659px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: 70px 5px 20px 5px;
     display: flex;
     flex-direction: row;
@@ -339,7 +349,7 @@ nav a:hover {
     left: 25%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -349,7 +359,7 @@ nav a:hover {
     height: 380px;
     width: 659px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: 70px 5px 20px 5px;
     display: flex;
     flex-direction: row;
@@ -379,7 +389,7 @@ nav a:hover {
     height: 380px;
     width: 659px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: 20px 5px;
     display: flex;
     flex-direction: row;
@@ -408,7 +418,7 @@ nav a:hover {
     height: 380px;
     width: 659px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: 20px 5px;
     display: flex;
     flex-direction: row;

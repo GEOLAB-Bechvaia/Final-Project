@@ -255,7 +255,9 @@ nav a:hover {
 }
 
 /* General */
+/* Responsive */
 @media (max-width: 480px) {
+  /* Home */
   .card1 img, .card2 img, .card3 img {
     width: 93% !important;
   }
@@ -270,6 +272,49 @@ nav a:hover {
   }
   .menu {
     display: none !important;
+  }
+  /* Home */
+  /* EUIV */
+  #euivtxt {
+    width: 50% !important;
+    top: 90px !important;
+    left: 130px !important;
+  }
+  /* EUIV */
+  /* HOIIV */
+  #hoitxt {
+    width: 50% !important;
+    height: auto !important;
+    top: 50px !important;
+    left: 120px !important;
+  }
+  #hoiserv h2 {
+    font-size: 2rem !important;
+  }
+  #hoiserv p {
+    width: 400px !important;
+  }
+  /* HOIIV */
+  /* CK3 */
+  #ck3serv h2 {
+    font-size: 2rem !important;
+  }
+  #ck3serv p {
+    width: 400px !important;
+  }
+  /* CK3 */
+  /* EUV */
+  #euvtxt {
+    width: 50% !important;
+    height: auto !important;
+    top: 90px !important;
+    left: 235px !important;
+  }
+  #euvserv h1 {
+    font-size: 3rem !important;
+  }
+  #euvserv p {
+    width: 400px !important;
   }
 }
 @media (max-width: 1120px) {
@@ -303,13 +348,64 @@ nav a:hover {
     height: auto;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  /* EUIV */
+  #euivtxt {
+    width: 50% !important;
+    height: auto !important;
+    top: 100px !important;
+    left: 210px !important;
+  }
+  /* EUIV */
+  /* HOIIV */
+  #hoitxt {
+    width: 50% !important;
+    height: auto !important;
+    top: 20px !important;
+    left: 200px !important;
+  }
+  #hoiserv p {
+    width: 600px !important;
+  }
+  /* HOIIV */
+  /* CK3 */
+  #ck3serv p {
+    width: 600px !important;
+  }
+  /* CK3 */
+  /* EUV */
+  #euvtxt {
+    width: 50% !important;
+    height: auto !important;
+    top: 140px !important;
+    left: 370px !important;
+  }
+  #euvserv p {
+    width: 600px !important;
+  }
+  /* EUV */
+  /* Services */
+  #serv1 p {
+    top: 430px !important;
+    left: 380px !important;
+  }
+  #serv2 p {
+    top: 910px !important;
+    left: 380px !important;
+  }
+  #serv3 p {
+    top: 1350px !important;
+    left: 300px !important;
+  }
+  #serv4 p {
+    top: 1790px !important;
+    left: 380px !important;
+  }
+}
 /* General */
 .menuph {
   display: none;
   color: white;
-}
-
-.menuph {
   width: 100%;
   height: 100px;
   background-color: #141414;
@@ -327,6 +423,7 @@ nav a:hover {
   list-style: none;
   padding: 10px 0;
   min-width: 150px;
+  z-index: 100;
 }
 
 .dropdown-content a {
@@ -347,6 +444,13 @@ nav a:hover {
 
 /* General */
 /* Services */
+#rts {
+  font-family: "Universalis", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
 .servo {
   display: flex;
   flex-wrap: wrap;
@@ -366,7 +470,7 @@ nav a:hover {
   height: 380px;
   width: 659px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin: 70px 5px 20px 5px;
   display: flex;
   flex-direction: row;
@@ -385,7 +489,7 @@ nav a:hover {
   left: 25%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -395,7 +499,7 @@ nav a:hover {
   height: 380px;
   width: 659px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin: 70px 5px 20px 5px;
   display: flex;
   flex-direction: row;
@@ -424,7 +528,7 @@ nav a:hover {
   height: 380px;
   width: 659px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin: 20px 5px;
   display: flex;
   flex-direction: row;
@@ -453,7 +557,7 @@ nav a:hover {
   height: 380px;
   width: 659px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin: 20px 5px;
   display: flex;
   flex-direction: row;
