@@ -11,11 +11,6 @@ body {
     background-color: #2d2d2d;
 }
 
-h1 {
-    font-size: 36px;
-    font-family: "Times New Roman", Times, serif;
-}
-
 /* General */
 
 .menu {
@@ -332,8 +327,7 @@ nav a:hover {
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     margin: 70px 5px 20px 5px;
-    display: flex;
-    flex-direction: row;
+    position: relative;
 }
 
 #serv1 img {
@@ -341,18 +335,22 @@ nav a:hover {
     height: 358px;
     margin: 10px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 #serv1 p {
     position: absolute;
-    top: 55%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    inset: 0;                  /* top:0 right:0 bottom:0 left:0 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin: 0;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    pointer-events: none;
 }
 
 #serv2 {
@@ -361,8 +359,7 @@ nav a:hover {
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     margin: 70px 5px 20px 5px;
-    display: flex;
-    flex-direction: row;
+    position: relative;
 }
 
 #serv2 img {
@@ -370,18 +367,22 @@ nav a:hover {
     height: 358px;
     margin: 10px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 #serv2 p {
     position: absolute;
-    top: 55%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    inset: 0;                  /* top:0 right:0 bottom:0 left:0 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin: 0;
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    pointer-events: none;
 }
 
 
@@ -391,8 +392,7 @@ nav a:hover {
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     margin: 20px 5px;
-    display: flex;
-    flex-direction: row;
+    position: relative;
 }
 
 #serv3 img {
@@ -400,18 +400,22 @@ nav a:hover {
     height: 358px;
     margin: 10px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 #serv3 p {
     position: absolute;
-    top: 122%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    inset: 0;                  /* top:0 right:0 bottom:0 left:0 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin: 0;
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    pointer-events: none;
 }
 
 #serv4 {
@@ -420,8 +424,7 @@ nav a:hover {
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     margin: 20px 5px;
-    display: flex;
-    flex-direction: row;
+    position: relative;
 }
 
 #serv4 img {
@@ -429,37 +432,31 @@ nav a:hover {
     height: 358px;
     margin: 10px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 #serv4 p {
     position: absolute;
-    top: 122%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    inset: 0;                  /* top:0 right:0 bottom:0 left:0 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin: 0;
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    pointer-events: none;
 }
-
-@media (max-width: 680px) {
-    #serv1 img, #serv2 img, #serv3 img, #serv4 img {
-        width: 80%;
-        height: 80%;
-    }
-}
-
-@media (max-width: 680px) {
-    #serv1, #serv2, #serv3, #serv4 {
-        width: 550px;
-        height: 317px;
-    }
-}
-
 
 /* Services */
 /* EUIV */
+
+.euiv {
+    position: relative;
+    width: 100%;
+}
 
 #euivbg {
     width: 100%;
@@ -477,8 +474,9 @@ nav a:hover {
 
 #euivtxt {
     position: absolute;
-    top: 50px;
-    left: 350px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #euivserv {
@@ -645,6 +643,11 @@ nav a:hover {
 /* General Button */
 /* HOIIV */
 
+.hoiiv {
+    position: relative;
+    width: 100%;
+}
+
 #hoibg {
     width: 100%;
     height: auto;
@@ -661,8 +664,8 @@ nav a:hover {
 
 #hoitxt {
     position: absolute;
-    top: 140px;
-    left: 34%;
+    top: 17%;
+    left: 38%;
     width: 425.6px;
     aspect-ratio: auto 425.6 / 435.2;
     height: 435.2px;
@@ -705,6 +708,27 @@ nav a:hover {
 
 /* HOIIV */
 /* CK3 */
+
+#ck3bg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+
+#ck3txt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 #ck3serv {
     margin: 40px;
@@ -844,4 +868,117 @@ nav a:hover {
 #registerBtn:hover {
     background-color: transparent;
     color: #ffd267;
+}
+
+/* Form */
+/* Contact */
+
+.cont {
+    display: flex;
+}
+
+.office {
+    margin: 40px 10%;
+}
+
+.office iframe {
+    width: 600px;
+    height: 400px;
+}
+
+.office h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    font-family: "Universalis", sans-serif;
+}
+
+.comtacs {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5%;
+}
+
+.comtacs h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+#insta, #fb, #tg, #phone {
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+/* Contact */
+/* About Us */
+
+#ceo {
+    margin: 70px 0;
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Universalis", sans-serif;
+}
+
+#ceo h1 {
+    font-size: 4rem;
+}
+
+#ceo h3 {
+    font-size: 2rem;
+}
+
+#ceo img, .cof img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.cof {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.cof h2 {
+    font-size: 3rem;
+}
+
+.cof h3 {
+    font-size: 1.5rem;
+}
+
+.cc {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cc1, #cc2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#cc2 {
+    position: relative;
+}
+
+#cc2 h3 {
+    position: absolute;
+    top: 80%;
+}
+
+.sponsors {
+    margin: 50px 0;
+    font-size: 4rem;
+    text-align: center;
+    color: whitesmoke;
+    flex-wrap: wrap;
 }

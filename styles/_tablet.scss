@@ -3,8 +3,6 @@
 #euivtxt {
     width: 50% !important;
     height: auto !important;
-    top: 100px !important;
-    left: 210px !important;
 }
 
 /* EUIV */
@@ -13,8 +11,8 @@
 #hoitxt {
     width: 50% !important;
     height: auto !important;
-    top: 20px !important;
-    left: 200px !important;
+    top: -20% !important;
+    left: 26% !important;
 }
 
 #hoiserv p {
@@ -23,6 +21,11 @@
 
 /* HOIIV */
 /* CK3 */
+
+#ck3txt {
+    width: 50% !important;
+    top: 20% !important;
+}
 
 #ck3serv p {
     width: 600px !important;
@@ -44,23 +47,3 @@
 
 /* EUV */
 /* Services */
-
-#serv1 p {
-    top: 430px !important;
-    left: 380px !important;
-}
-
-#serv2 p {
-    top: 910px !important;
-    left: 380px !important;
-}
-
-#serv3 p {
-    top: 1350px !important;
-    left: 300px !important;
-}
-
-#serv4 p {
-    top: 1790px !important;
-    left: 380px !important;
-}

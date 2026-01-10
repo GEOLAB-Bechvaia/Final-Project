@@ -58,11 +58,6 @@ body {
   background-color: #2d2d2d;
 }
 
-h1 {
-  font-size: 36px;
-  font-family: "Times New Roman", Times, serif;
-}
-
 /* General */
 .menu {
   height: 100px;
@@ -277,16 +272,14 @@ nav a:hover {
   /* EUIV */
   #euivtxt {
     width: 50% !important;
-    top: 90px !important;
-    left: 130px !important;
   }
   /* EUIV */
   /* HOIIV */
   #hoitxt {
     width: 50% !important;
     height: auto !important;
-    top: 50px !important;
-    left: 120px !important;
+    top: -20% !important;
+    left: 27% !important;
   }
   #hoiserv h2 {
     font-size: 2rem !important;
@@ -296,6 +289,10 @@ nav a:hover {
   }
   /* HOIIV */
   /* CK3 */
+  #ck3txt {
+    width: 50% !important;
+    top: 20% !important;
+  }
   #ck3serv h2 {
     font-size: 2rem !important;
   }
@@ -315,6 +312,27 @@ nav a:hover {
   }
   #euvserv p {
     width: 400px !important;
+  }
+  /* EUV */
+  /* Services */
+  #serv1, #serv2, #serv3, #serv4 {
+    width: 400px !important;
+    margin-left: 20px !important;
+  }
+  #serv1 img, #serv2 img, #serv3 img, #serv4 img {
+    width: 380px !important;
+  }
+  /* Services */
+  /* About Us */
+  .cof img {
+    width: 90% !important;
+    height: auto;
+  }
+  .cof h3 {
+    font-size: 0.75rem;
+  }
+  #cc2 h3 {
+    top: 90% !important;
   }
 }
 @media (max-width: 1120px) {
@@ -353,22 +371,24 @@ nav a:hover {
   #euivtxt {
     width: 50% !important;
     height: auto !important;
-    top: 100px !important;
-    left: 210px !important;
   }
   /* EUIV */
   /* HOIIV */
   #hoitxt {
     width: 50% !important;
     height: auto !important;
-    top: 20px !important;
-    left: 200px !important;
+    top: -20% !important;
+    left: 26% !important;
   }
   #hoiserv p {
     width: 600px !important;
   }
   /* HOIIV */
   /* CK3 */
+  #ck3txt {
+    width: 50% !important;
+    top: 20% !important;
+  }
   #ck3serv p {
     width: 600px !important;
   }
@@ -385,22 +405,6 @@ nav a:hover {
   }
   /* EUV */
   /* Services */
-  #serv1 p {
-    top: 430px !important;
-    left: 380px !important;
-  }
-  #serv2 p {
-    top: 910px !important;
-    left: 380px !important;
-  }
-  #serv3 p {
-    top: 1350px !important;
-    left: 300px !important;
-  }
-  #serv4 p {
-    top: 1790px !important;
-    left: 380px !important;
-  }
 }
 /* General */
 .menuph {
@@ -472,8 +476,7 @@ nav a:hover {
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
   margin: 70px 5px 20px 5px;
-  display: flex;
-  flex-direction: row;
+  position: relative;
 }
 
 #serv1 img {
@@ -481,18 +484,21 @@ nav a:hover {
   height: 358px;
   margin: 10px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 #serv1 p {
   position: absolute;
-  top: 55%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  pointer-events: none;
 }
 
 #serv2 {
@@ -501,8 +507,7 @@ nav a:hover {
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
   margin: 70px 5px 20px 5px;
-  display: flex;
-  flex-direction: row;
+  position: relative;
 }
 
 #serv2 img {
@@ -510,18 +515,21 @@ nav a:hover {
   height: 358px;
   margin: 10px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 #serv2 p {
   position: absolute;
-  top: 55%;
-  left: 75%;
-  transform: translate(-50%, -50%);
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  pointer-events: none;
 }
 
 #serv3 {
@@ -530,8 +538,7 @@ nav a:hover {
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
   margin: 20px 5px;
-  display: flex;
-  flex-direction: row;
+  position: relative;
 }
 
 #serv3 img {
@@ -539,18 +546,21 @@ nav a:hover {
   height: 358px;
   margin: 10px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 #serv3 p {
   position: absolute;
-  top: 122%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  pointer-events: none;
 }
 
 #serv4 {
@@ -559,8 +569,7 @@ nav a:hover {
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
   margin: 20px 5px;
-  display: flex;
-  flex-direction: row;
+  position: relative;
 }
 
 #serv4 img {
@@ -568,34 +577,30 @@ nav a:hover {
   height: 358px;
   margin: 10px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 #serv4 p {
   position: absolute;
-  top: 122%;
-  left: 75%;
-  transform: translate(-50%, -50%);
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  pointer-events: none;
 }
 
-@media (max-width: 680px) {
-  #serv1 img, #serv2 img, #serv3 img, #serv4 img {
-    width: 80%;
-    height: 80%;
-  }
-}
-@media (max-width: 680px) {
-  #serv1, #serv2, #serv3, #serv4 {
-    width: 550px;
-    height: 317px;
-  }
-}
 /* Services */
 /* EUIV */
+.euiv {
+  position: relative;
+  width: 100%;
+}
+
 #euivbg {
   width: 100%;
   height: auto;
@@ -610,8 +615,9 @@ nav a:hover {
 
 #euivtxt {
   position: absolute;
-  top: 50px;
-  left: 350px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #euivserv {
@@ -775,6 +781,11 @@ nav a:hover {
 
 /* General Button */
 /* HOIIV */
+.hoiiv {
+  position: relative;
+  width: 100%;
+}
+
 #hoibg {
   width: 100%;
   height: auto;
@@ -789,8 +800,8 @@ nav a:hover {
 
 #hoitxt {
   position: absolute;
-  top: 140px;
-  left: 34%;
+  top: 17%;
+  left: 38%;
   width: 425.6px;
   aspect-ratio: auto 425.6/435.2;
   height: 435.2px;
@@ -832,6 +843,25 @@ nav a:hover {
 
 /* HOIIV */
 /* CK3 */
+#ck3bg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+#ck3txt {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #ck3serv {
   margin: 40px;
   display: flex;
@@ -969,4 +999,115 @@ nav a:hover {
 #registerBtn:hover {
   background-color: transparent;
   color: #ffd267;
+}
+
+/* Form */
+/* Contact */
+.cont {
+  display: flex;
+}
+
+.office {
+  margin: 40px 10%;
+}
+
+.office iframe {
+  width: 600px;
+  height: 400px;
+}
+
+.office h2 {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  font-family: "Universalis", sans-serif;
+}
+
+.comtacs {
+  width: 500px;
+  height: 400px;
+  background-color: black;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5%;
+}
+
+.comtacs h2 {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+#insta, #fb, #tg, #phone {
+  display: flex;
+  color: white;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+/* Contact */
+/* About Us */
+#ceo {
+  margin: 70px 0;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Universalis", sans-serif;
+}
+
+#ceo h1 {
+  font-size: 4rem;
+}
+
+#ceo h3 {
+  font-size: 2rem;
+}
+
+#ceo img, .cof img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.cof {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.cof h2 {
+  font-size: 3rem;
+}
+
+.cof h3 {
+  font-size: 1.5rem;
+}
+
+.cc {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#cc1, #cc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#cc2 {
+  position: relative;
+}
+
+#cc2 h3 {
+  position: absolute;
+  top: 80%;
+}
+
+.sponsors {
+  margin: 50px 0;
+  font-size: 4rem;
+  text-align: center;
+  color: whitesmoke;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=styles.css.map */
