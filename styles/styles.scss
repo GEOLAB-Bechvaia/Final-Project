@@ -14,9 +14,17 @@ body {
 /* General */
 
 .menu {
-    height: 100px;
+    height: 150px;
     width: 100%;
     background-color: #141414;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-logo img {
+    width: 375.3px;
+    height: 150px;
 }
 
 nav {
@@ -28,9 +36,9 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 36px;
+    font-size: 3rem;
     transition: color 0.1s linear, font-size 0.1s linear;
-    margin: 10px 10px;
+    margin: 30px 30px 10px 10px;
 }
 
 nav a:hover {
@@ -260,9 +268,10 @@ nav a:hover {
 .menuph {
     display: none;
     color: white;
-    width: 100%;
+    width: 15%;
     height: 100px;
     background-color: #141414;
+    margin-top: -100px;
 }
 
 .dropdown i {
@@ -725,7 +734,7 @@ nav a:hover {
 
 #ck3txt {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -975,10 +984,32 @@ nav a:hover {
     top: 80%;
 }
 
-.sponsors {
-    margin: 50px 0;
-    font-size: 4rem;
+.talk {
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#ODM {
     text-align: center;
-    color: whitesmoke;
-    flex-wrap: wrap;
+    font-size: 5rem;
+    margin: 100px 0;
+    font-family: "Fondamento", sans-serif;
+    color: white;
+}
+
+#ODM::first-letter {
+    color: red;
+    font-size: 7rem;
+}
+
+.talk p {
+    margin: 30px 20px 20px 30px;
+}
+
+.talk h5 {
+    margin-left: 30px;
+    color: rgb(201, 201, 201);
 }
